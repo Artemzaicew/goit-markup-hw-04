@@ -277,6 +277,32 @@ margin-left: auto;
     margin-left: 24px;
 }
 
+
+/* list actions */
+.actions {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social {
+    display: block;
+    background-color: #404BBF;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
+.social .social-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+   
+}
+
 /* section team */
 .team {
     background-color: var(--section-team-bcg-color);

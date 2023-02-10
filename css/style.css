@@ -16,6 +16,10 @@
     --button-hover-portfolio: #404BBF;
     --activity-nav-gap-left: 24px;
     --activity-nav-gap-top: 48px;
+    --card-bg-color: #4D5AE5;
+    --card-bg-color-hover: #404BBF;
+    --logo-bg-color:#8E8F99;
+    --logo-bg-color-hover:
 }
 
  body {
@@ -277,32 +281,6 @@ margin-left: auto;
     margin-left: 24px;
 }
 
-
-/* list actions */
-.actions {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.social {
-    display: block;
-    background-color: #404BBF;
-    color: #ffffff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 12px;
-}
-
-.social .social-icon {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-   
-}
-
 /* section team */
 .team {
     background-color: var(--section-team-bcg-color);
@@ -339,6 +317,59 @@ margin-left: auto;
     text-align: center;
 }
 
+/* list actions */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social {
+    display: block;
+    background-color: var(--card-bg-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
+.social:hover {
+    background-color: var(--card-bg-color-hover);
+}
+
+.social .social-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+   
+}
+
+.card-content p {
+    margin-bottom: 8px;
+}
+
+/* Customers */
+
+.logo {
+    display: block;
+    background-color: var(--white-color);
+    color: var(--logo-bg-color);
+    border: 1px solid var(--logo-bg-color);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+
+.logo .logo-icon { 
+    background-size: contain;
+    background-position: center;
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+} 
 
 /* footer */
 .footer {

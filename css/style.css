@@ -475,7 +475,7 @@ button*/
 .list .button:focus {
     color: var(--white-color);
     background-color: var(--button-hover-portfolio);
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
 }
 
@@ -550,6 +550,11 @@ margin-bottom: 8px;
 .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
+}
+
+.activity-nav .shadow:hover,
+.activity-nav .shadow:focus {
+ box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
 }
 
 

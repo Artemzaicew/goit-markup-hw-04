@@ -237,24 +237,24 @@ margin-left: auto;
     padding-bottom: 120px;
 }
 
-.peculiarity .item {
-    width: 100%;
-}
-
-.peculiarity .item {
-    display: block;
+.peculiarity-icon  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 264px;
     height: 112px;
-    background: var(--section-team-bcg-color);
-    /* background-position: center; */
+    background-color: var(--section-team-bcg-color);
     margin-bottom: 8px;
-    margin-right: 24px;
     padding: 24px 100px;
 }
 
-.icon-advantage {
+.icon {
     width: 64px;
     height: 64px;
+}
+
+.peculiarity .item:not(:last-child) {
+     margin-right: 24px;
 }
 
 /* list img */

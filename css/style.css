@@ -245,7 +245,6 @@ margin-left: auto;
     height: 112px;
     background-color: var(--section-team-bcg-color);
     margin-bottom: 8px;
-    padding: 24px 100px;
 }
 
 .icon {
@@ -313,15 +312,23 @@ margin-left: auto;
 
 .social {
     display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-link {
     background-color: var(--card-bg-color);
     color: var(--white-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--card-bg-color-hover);
 }
 
@@ -344,29 +351,37 @@ margin-left: auto;
     text-align: center;
     margin-top: 0;
     margin-bottom: 72px;
+    font-size: 36px;
 }
 
 .logo {
     display: block;
-    background-color: var(--white-color);
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
     width: 168px;
     height: 88px;
-    padding: 16px 32px;
+}
+
+.logo-link {
+    background-color: var(--white-color);
+    color: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .logo .logo-icon { 
     background-size: contain;
     background-position: center;
     fill: currentColor;
-    width: 100%;
-    height: 100%;
 } 
 
-.logo-icon:hover {
+.logo-link:hover,
+.logo-link:focus {
     color: var(--card-bg-color-hover);
+    border: 1px solid var(--card-bg-color-hover);
 }
 
 /* footer */
@@ -422,15 +437,23 @@ margin-left: auto;
 
 .social-footer {
     display:block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-link-footer {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
     background-color: var(--social-bg-hover);
 }
 
@@ -551,9 +574,12 @@ margin-bottom: 8px;
     padding-top: 96px;
     padding-bottom: 120px;
 }
+.activity-nav .link {
+    display: block;
+}
 
-.activity-nav .shadow:hover,
-.activity-nav .shadow:focus {
+.activity-nav .link:hover,
+.activity-nav .link:focus {
  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
 }
 
